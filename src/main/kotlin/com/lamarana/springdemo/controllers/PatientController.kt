@@ -40,7 +40,6 @@ class PatientController {
 
         val response = patientRepository.findById(id).map { existType ->
             val newPatient = existType.copy(
-//                    id = existType.id,
                     nom = patient.nom,
                     dateNaissance = patient.dateNaissance
             )
